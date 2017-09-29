@@ -72,4 +72,13 @@ module.exports = (app) => {
 
   // terms of use
   app.get('/terms-of-use', (req, res) => res.render('terms-of-use'));
+
+    app.get('/results', (req, res) =>
+    res.render('results', {
+      twitterUser: req.query.source ==='myself' && req.user ? req.user.profile : {},
+      showTwitterButton: !!process.env.TWITTER_CONSUMER_KEY,
+      bluemixAnalytics: !!process.env.BLUEMIX_ANALYTICS,
+      boosh:5
+    })
+  );
 };

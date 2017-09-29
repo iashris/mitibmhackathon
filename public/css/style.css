@@ -406,7 +406,7 @@ body {
 .base--STYLED h2 {
   font-size: 1.95312em;
   font-weight: 700;
-  color: #d74108; }
+  color: #ff6c55 }
 
 .base--h3,
 .base--STYLED h3 {
@@ -648,13 +648,13 @@ body {
   color: #a53725;
   font-weight: bold;
   background-color: transparent;
-  border: 2px solid #d74108;
+  border: 2px solid #ff6c55;
   display: inline-block; }
   .base--button:hover,
   .base--STYLED button:hover, .base--button:focus,
   .base--STYLED button:focus {
     color: #fff;
-    background-color: #d74108; }
+    background-color: #ff6c55; }
 
 .base--button[type='submit'],
 .base--STYLED button[type='submit'] {
@@ -729,7 +729,7 @@ body {
 .base--STYLED code {
   padding: .2em .5em;
   font-size: .8em;
-  color: #d74108;
+  color: #ff6c55;
   outline: 1px solid rgba(119, 118, 119, 0.25); }
 
 .base--pre,
@@ -1253,7 +1253,7 @@ pre[class*=" language-"] {
   .base--radio + .input--radio:before {
     display: none; }
   .base--radio:checked + .input--radio {
-    border-left-color: #d74108; }
+    border-left-color: #ff6c55; }
   @media (min-width: 768px) {
     .input--radio {
       display: inline-block;
@@ -2872,10 +2872,10 @@ pre[class*=" language-"] {
   .style-tile--color-details {
     color: inherit; }
   .style-tile--color:nth-of-type(65) {
-    background-color: #d74108;
+    background-color: #ff6c55;
     color: #fff; }
     .style-tile--color:nth-of-type(65):after {
-      content: "color('orange', 50)|#d74108";
+      content: "color('orange', 50)|#ff6c55";
       visibility: hidden;
       height: 0px;
       width: 0px;

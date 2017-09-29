@@ -372,7 +372,6 @@ $(document).ready(function() {
         updateJSON(data);
         loadConsumptionPreferences(data);
         enableAnalyzeButtons(true);
-
       },
       error: function(err) {
         // eslint-disable-next-line

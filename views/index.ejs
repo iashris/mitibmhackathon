@@ -1,4 +1,4 @@
-∏<$ include partials/header $>
+<$ include partials/header $>
   <div class="_demo--container">
     <div class="_content input">
       <h2 class="base--h2">
@@ -7,10 +7,25 @@
       <p class="base--p">
         <$= __("intro-1") $>
       </p>
-      <p class="base--p">
+      <p class="base--p subtitle">
         <$= __("intro-4") $>
       </p>
-      <div class="tab-panels" role="tabpanel">
+
+<!--My intercept-->
+<div class="maincontrols">
+
+
+<p class="base--p elega">My role model for 2018 is @<input type="text"></p>
+
+<form class="input--form3 auth-form" method='get' action='/auth/twitter'>
+              <p class="base--p" style="text-align:center"><button id="trigger" type="submit" class="base--button input--submit-button3"><$= __("button-analyzetwitter") $></button></p>
+            </form>
+
+</div>
+
+
+
+      <div class="tab-panels" role="tabpanel" id="controls">
         <span class="input--reset icon-hyperlink">
           <span class="icon icon-reset"></span>
         <button class="base--a icon-hyperlink--button icon-hyperlink--button_BLANK input--reset-button" href="" type="reset">
@@ -37,6 +52,7 @@
             </a>
           </li>
         </ul>
+
         <div class="tab-panels--tab-content">
           <div id="twitter-panel" class="tab-panels--tab-pane active" role="tab-panel">
             <form class="input--form1">
@@ -75,6 +91,7 @@
                 <button type="submit" class="base--button input--submit-button1"><$= __("button-analyze") $></button>
               </div>
             </form>
+
           </div>
           <div id="text-panel" class="tab-panels--tab-pane" role="tab-panel">
             <form class="input--form2">
@@ -141,7 +158,7 @@
     </div>
   </div>
 
-  <div class="_demo--bg-container">
+  <div class="_demo--bg-container" id="results">
     <div class="_demo--container">
       <div class="_content">
         <h3 class="base--h3 output--header"><$= __("title-output") $></h3>
