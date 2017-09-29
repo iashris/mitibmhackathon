@@ -1,0 +1,9 @@
+---
+applications:
+- name: youplusplus
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+  - my-pi-service
